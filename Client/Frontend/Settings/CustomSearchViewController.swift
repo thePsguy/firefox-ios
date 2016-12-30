@@ -117,6 +117,7 @@ class CustomSearchViewController: SettingsTableViewController {
         ]
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Save, target: self, action: #selector(self.addCustomSearchEngine(_:)))
+        self.navigationItem.rightBarButtonItem?.accessibilityIdentifier = "customEngineSaveButton"
         
         return settings
     }
