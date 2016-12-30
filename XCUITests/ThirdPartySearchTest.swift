@@ -172,9 +172,9 @@ class ThirdPartySearchTest: BaseTestCase {
         let tablesQuery = app.tables
         tablesQuery.cells["Search"].tap()
         app.tables.cells["customEngineViewButton"].tap()
-        app.textFields["customEngineTitle"].tap()
+        app.textViews["customEngineTitle"].tap()
         app.typeText("Feeling Lucky")
-        app.textFields["customEngineUrl"].tap()
+        app.textViews["customEngineUrl"].tap()
         app.typeText("http://www.google.com/search?q=&btnI") //Occurunces of %s != 1
         
         tablesQuery.cells["saveCustomEngine"].tap()
